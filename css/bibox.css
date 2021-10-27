@@ -1,0 +1,492 @@
+*,*:before,*:after
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+     font-family: 'Montserrat', sans-serif;
+
+    
+}
+.container
+{
+    width:1100px;
+    margin:auto;
+}
+.clearfix
+{
+	clear:both;
+}
+/*--------start header--------*/
+header
+{
+ background-image:url("../images/header-bg.jpg");
+  height:650px;
+  background-size: cover;
+  position:relative;	
+}
+ 
+header .header-head
+{
+	padding-top: 25px;
+}
+header .header-head h2
+{
+
+	float:left;
+	text-shadow: 1px 2px 15px #fff 
+}
+header .header-head h2 a
+{
+
+	color:#ffffff;
+	text-decoration: none;
+	
+}
+header .header-head nav
+{
+	float:right;
+	
+}
+header .header-head nav ul
+{
+	list-style: none;
+}
+header .header-head nav ul li
+{
+	display:inline-block;
+	margin-left: 20px;
+
+}
+
+header .header-head nav ul li a
+{
+	color:#FFFFFF;
+	text-decoration:none;
+	font-size:20px;
+	font-weight: bold;
+	text-shadow: 1px 2px 15px #fff 
+}
+header .header-content
+{
+    position: absolute;
+    top:52%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    margin: auto;
+
+
+}
+header .header-content h1
+{
+	color: #FFFFFF;
+	margin-bottom:25px;
+	font-size: 50px;
+	
+}
+header .header-content p
+{
+	color:#ffffff;
+	font-size:21px;
+	margin-bottom:25px;
+
+}
+header .header-content button
+{
+	height:55px;
+	width:180px;
+	margin-left:3%;
+	outline: none;
+	border:0;
+	padding:15px;
+	margin-bottom:25px;
+	font-size:15px;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 7px;
+	cursor: pointer;
+	transition: all .5s ease-in-out;
+}
+
+header .header-content button:first-child
+{
+	background-color: #ffffff;
+}
+header .header-content button:last-child
+{
+	background-color:#7DDFE2;
+	color:#ffffff;
+}
+header .header-footer 
+{
+	width:30px;
+	height:53px;
+	border:2px solid #ffffff;
+	position: absolute;
+	top:85%;
+	left:50%;
+	border-radius: 18px;
+	text-align:center
+
+}
+header .header-footer .scroll
+{
+	width:5px;
+	height:10px;
+	border:2px solid #ffffff;
+	margin: auto;
+	position: relative;
+	top:4px;
+	background-color: #ffffff;
+	animation: scrolling 1s ease-in-out infinite;	
+}
+@keyframes scrolling 
+{
+	0%
+	{
+      opacity: 0;
+      top:8px;
+	}
+	30%
+	{
+       opacity: 1;
+       top:15px;
+	}
+	100%
+	{
+       opacity: 0;
+       top:30px;
+	}
+}
+/*************end header**************/
+/*************start section content**************/
+section.content
+{
+	background-image: url("../images/be-the-first-bg.jpg");
+	background-size: cover;
+	height:600px;
+	position: relative;
+	background-attachment: fixed;
+
+}
+section.content .iphone
+{
+	margin:auto;
+	text-align: center;
+	position: absolute; 
+	top:22%;
+	left:31%;
+
+}
+section.content .iphone img
+{
+	height:575px;
+	width:400px;
+
+}
+section.content .iphone h1{
+	color:#ffffff;
+	font-size:42px;	
+	margin-bottom:20px; 
+}
+section.content .iphone p
+{
+	color:#ffffff;
+	font-size: 25px;
+	margin-bottom:20px;
+
+}
+/*************end section content**************/
+/*************start section features**************/
+section.features
+{
+	
+	height:450px;
+	position: relative;
+}
+section.features .features-content
+{
+	position:absolute;
+	top:46%;
+
+	
+}
+section.features .features-content .features-inf:nth-of-type(1)
+{
+ float: left;
+ width:27%;
+ border-top: 5px solid #6D3F96;
+ margin-left:1%;
+}
+section.features .features-content .features-inf:nth-of-type(2)
+{
+ float: left;
+ width:27%;
+ border-top: 5px solid #70C9CC ;
+ margin-left:4%;
+}
+section.features .features-content .features-inf:nth-of-type(3)
+{
+ float: left;
+ width:27%;
+ border-top: 5px solid #FDC05D ;
+ margin-left:4%;
+ 
+}
+section.features .features-content .features-inf h3
+{
+	padding-top: 15px;
+}
+section.features .features-content .features-inf p
+{
+    padding-top: 15px;
+    color:#929496;
+}
+
+
+
+
+/*************end section features**************/
+/*************start section pricing************/
+section.pricing
+{
+	background-color: #70CBCE;
+	height:825px;
+	
+
+
+}
+section.pricing .pricing-head
+{
+	text-align: center;
+	padding-top:130px;
+}
+section.pricing .pricing-head h1
+{
+	color:#ffffff;
+	font-size:45px;
+	padding-bottom:20px;
+}
+section.pricing .pricing-head p
+{
+	color:#ffffff;
+	font-size:18px;
+}
+section.pricing .flex
+{
+	text-align: center;
+	display: flex;
+	padding:50px;
+	
+}
+section.pricing .flex .pricing-content
+{
+	transition: all 0.5s ease-in-out
+}
+section.pricing .flex .pricing-content:nth-of-type(2)
+{
+    transform: translateY(-20px);
+}
+section.pricing .flex .pricing-content ul
+{
+	list-style: none;
+}
+section.pricing .flex .pricing-content .one,
+section.pricing .flex .pricing-content .two
+{
+	background-color: #231F20;
+	color:#ffffff;
+
+}
+section.pricing .flex .pricing-content .one{
+	padding-top:20px;
+	padding-bottom: 40px;
+}
+section.pricing .flex .pricing-content .two
+{
+    padding-bottom:20px;
+    font-size:30px;
+    font-weight:bold;
+}
+section.pricing .flex .pricing-content .two span
+{
+	color:#929496;
+	font-size: 25px
+}
+section.pricing .flex .pricing-content .three,
+section.pricing .flex .pricing-content .four,
+section.pricing .flex .pricing-content .five,
+section.pricing .flex .pricing-content .six,
+section.pricing .flex .pricing-content .seven
+{
+	background-color: #ffffff
+}
+section.pricing .flex .pricing-content .three
+{
+	font-size: 12px;
+	color:#929496;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom:1px solid #E8EAEA ;
+	padding-left: 39px;
+	padding-right: 20px;
+
+}
+section.pricing .flex .pricing-content .four,
+section.pricing .flex .pricing-content .five,
+section.pricing .flex .pricing-content .six
+{
+	font-weight:bold;
+	font-size:17px;
+	padding-top:20px; 
+	border-bottom:1px solid #E8EAEA;
+	padding-bottom:20px;
+}
+section.pricing .flex .pricing-content .seven
+{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color:#70CED9;
+	cursor: pointer;
+}
+section.pricing .flex .pricing-content ul .one 
+{
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+
+}
+section.pricing .flex .pricing-content:hover
+{
+    transform: translateY(-20px);
+}
+section.pricing .flex .pricing-content:nth-of-type(2):hover 
+{
+	transform: translateY(-40px);
+}
+
+/*************end section pricing**************/
+/*************start section invite*************/
+section.invite
+{
+	height:575px;
+	background-color: #F5F5F5;
+	text-align: center;
+	
+}
+section.invite i
+{
+	margin-top: 130px;
+	border-radius:50%;
+	border:2px solid #70CBCE;
+	padding:20px;
+	color:#70CBCE;
+	margin-bottom: 20px;
+}
+section.invite h2
+{
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+section.invite p
+{
+	margin-bottom: 20px;
+}
+section.invite input
+{
+	padding:10px;
+	border:0;
+	outline: 0;
+	border-radius: 10px;
+	width:310px;
+	height:50px;
+}
+section.invite input::-webkit-input-placeholder
+{
+	color:#bbb;
+}
+section.invite button
+{
+	display: block;
+	margin: 20px auto;
+	width:200px;
+	height:50px;
+	text-transform: uppercase;
+	color:#ffffff;
+	background-color: #70CBCE;
+	border:0;
+	outline: 0;
+	cursor: pointer;
+	border-radius: 7px;
+}
+/*************end section invite*************/
+/*************start section forbes**********/
+section.forbes
+{
+	height:450px;
+	padding-top: 10%;
+	padding-bottom:10%;
+	
+}
+section.forbes .forbes-content
+{
+	overflow: hidden
+	
+}
+section.forbes .image
+{
+	float:left;
+	width:20%;
+	padding-left: 15%
+
+}
+section.forbes .forbesm
+{
+	
+	float:left;
+	width: 80%;
+	padding-left: 10%
+}
+section.forbes .forbesm p
+{
+	display:block;
+	margin-bottom: 20px;
+		
+}
+section.forbes hr
+{
+	margin-bottom:20px;
+	background-color:#E8EAEA;
+	border: 0;
+	height: 2px
+}
+
+/*************end section forbes************/
+/*************start footer******************/
+footer
+{
+	height:70px;
+	overflow: hidden;
+}
+footer .left
+{
+	float:left;
+}
+footer .left span
+{
+    margin-right: 10px;
+
+}
+footer .right
+{
+	float:right;
+	color:#ccc;
+}
+
+/*************end footer********************/
+
+
+
+
+
